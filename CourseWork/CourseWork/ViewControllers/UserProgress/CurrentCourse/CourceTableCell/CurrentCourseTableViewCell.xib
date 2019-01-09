@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="currentCourse" rowHeight="111" id="KGk-i7-Jjw" customClass="CurrentCourseTableViewCell" customModule="CourseWork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQw-Tj-tTO" userLabel="ContainerView">
+                        <rect key="frame" x="16" y="11" width="288" height="83"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 семестр" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flv-HQ-egY">
+                                <rect key="frame" x="61" y="41" width="65" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Разработка мобильных приложений под iOS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glc-b5-9lj">
+                                <rect key="frame" x="61" y="6" width="167" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1C1-ky-KH2">
+                                <rect key="frame" x="240.5" y="33" width="39.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-ios" translatesAutoresizingMaskIntoConstraints="NO" id="2nn-Jf-Iuc" customClass="RoundImageView" customModule="CourseWork" customModuleProvider="target">
+                                <rect key="frame" x="8" y="19" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="dYe-nx-J0F"/>
+                                    <constraint firstAttribute="width" constant="45" id="euL-c2-yBU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Преподователь" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ii-Yv-PNO">
+                                <rect key="frame" x="61" y="60" width="98" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 блок " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7K-rY-BiH">
+                                <rect key="frame" x="136" y="41" width="45" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1C1-ky-KH2" secondAttribute="trailing" constant="8" id="3hV-b2-YAl"/>
+                            <constraint firstItem="Glc-b5-9lj" firstAttribute="leading" secondItem="2nn-Jf-Iuc" secondAttribute="trailing" constant="8" id="4nt-Th-JXn"/>
+                            <constraint firstItem="Flv-HQ-egY" firstAttribute="top" secondItem="Glc-b5-9lj" secondAttribute="bottom" constant="3.5" id="51U-9f-7Ay"/>
+                            <constraint firstItem="2nn-Jf-Iuc" firstAttribute="leading" secondItem="uQw-Tj-tTO" secondAttribute="leading" constant="8" id="Pgm-qQ-4AH"/>
+                            <constraint firstItem="4Ii-Yv-PNO" firstAttribute="leading" secondItem="Flv-HQ-egY" secondAttribute="leading" id="SGJ-zd-aRL"/>
+                            <constraint firstItem="1C1-ky-KH2" firstAttribute="top" secondItem="uQw-Tj-tTO" secondAttribute="top" constant="33" id="Uf7-YW-glR"/>
+                            <constraint firstItem="v7K-rY-BiH" firstAttribute="leading" secondItem="Flv-HQ-egY" secondAttribute="trailing" constant="10" id="g56-CD-b46"/>
+                            <constraint firstItem="Flv-HQ-egY" firstAttribute="leading" secondItem="Glc-b5-9lj" secondAttribute="leading" id="gHR-6a-DqU"/>
+                            <constraint firstAttribute="bottom" secondItem="1C1-ky-KH2" secondAttribute="bottom" constant="33" id="hTX-NN-uwW"/>
+                            <constraint firstItem="v7K-rY-BiH" firstAttribute="top" secondItem="Flv-HQ-egY" secondAttribute="top" id="oHs-uw-yva"/>
+                            <constraint firstItem="Glc-b5-9lj" firstAttribute="top" secondItem="uQw-Tj-tTO" secondAttribute="top" constant="6" id="pg8-XF-MQ9"/>
+                            <constraint firstItem="2nn-Jf-Iuc" firstAttribute="centerY" secondItem="uQw-Tj-tTO" secondAttribute="centerY" id="pjF-e6-mvp"/>
+                            <constraint firstAttribute="trailing" secondItem="Glc-b5-9lj" secondAttribute="trailing" constant="60" id="wbL-fB-uJw"/>
+                            <constraint firstItem="4Ii-Yv-PNO" firstAttribute="top" secondItem="Flv-HQ-egY" secondAttribute="bottom" constant="3" id="zhL-Wl-jUh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.36862745099999999" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="tintColor" red="0.0" green="0.36862745099999999" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="uQw-Tj-tTO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Vnj-96-VeB"/>
+                    <constraint firstItem="uQw-Tj-tTO" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="Y4p-EI-uk1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uQw-Tj-tTO" secondAttribute="trailing" id="dJX-kf-eRy"/>
+                    <constraint firstItem="uQw-Tj-tTO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="u6y-Dr-S47"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.35786201579999999" green="0.61385893489999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" red="0.35786201579999999" green="0.61385893489999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="numberOfBlockLabel" destination="v7K-rY-BiH" id="ee8-lk-Hpc"/>
+                <outlet property="numberOfSemestrLabel" destination="Flv-HQ-egY" id="s8O-O0-iDJ"/>
+                <outlet property="percentageOfCompletionLabel" destination="1C1-ky-KH2" id="Api-gw-W9t"/>
+                <outlet property="subjectIconImageView" destination="2nn-Jf-Iuc" id="L0e-m3-eZL"/>
+                <outlet property="subjectNameLabel" destination="Glc-b5-9lj" id="rO7-RW-F52"/>
+                <outlet property="teacherNameLabel" destination="4Ii-Yv-PNO" id="ySX-zB-Jus"/>
+                <outlet property="view" destination="uQw-Tj-tTO" id="9Hg-M8-f01"/>
+            </connections>
+            <point key="canvasLocation" x="136.875" y="164.2605633802817"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-ios" width="476" height="476"/>
+    </resources>
+</document>

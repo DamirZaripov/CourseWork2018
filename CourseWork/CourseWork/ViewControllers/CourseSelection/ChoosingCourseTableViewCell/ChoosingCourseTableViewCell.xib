@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="choosingCourse" rowHeight="65" id="KGk-i7-Jjw" customClass="ChoosingCourseTableViewCell" customModule="CourseWork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYr-nC-lHU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63G-f6-3oV">
+                                <rect key="frame" x="282" y="12" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="072-qD-psO"/>
+                                    <constraint firstAttribute="height" constant="30" id="FJX-wh-46e"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="onInfoButtonTouchUpInside:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WKp-m1-7RS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="63G-f6-3oV" firstAttribute="top" secondItem="bYr-nC-lHU" secondAttribute="top" constant="12" id="dXv-Eo-lrW"/>
+                            <constraint firstAttribute="trailing" secondItem="63G-f6-3oV" secondAttribute="trailing" constant="8" id="qK4-P2-bCx"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mLV-Az-Mwj" customClass="RoundImageView" customModule="CourseWork" customModuleProvider="target">
+                        <rect key="frame" x="15" y="12.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="9r0-9t-cxp"/>
+                            <constraint firstAttribute="height" constant="40" id="soy-Mr-Bdu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGY-Qv-BJU">
+                        <rect key="frame" x="73" y="12.5" width="203" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4o1-YR-Gpk">
+                        <rect key="frame" x="73" y="34" width="203" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UGY-Qv-BJU" firstAttribute="leading" secondItem="mLV-Az-Mwj" secondAttribute="trailing" constant="18" id="2WJ-xz-Z2w"/>
+                    <constraint firstItem="63G-f6-3oV" firstAttribute="leading" secondItem="4o1-YR-Gpk" secondAttribute="trailing" constant="6" id="B0a-EM-rrA"/>
+                    <constraint firstItem="4o1-YR-Gpk" firstAttribute="leading" secondItem="UGY-Qv-BJU" secondAttribute="leading" id="EXY-6U-f69"/>
+                    <constraint firstItem="mLV-Az-Mwj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="GmN-uL-7kY"/>
+                    <constraint firstItem="bYr-nC-lHU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JnK-ff-uhv"/>
+                    <constraint firstAttribute="bottom" secondItem="bYr-nC-lHU" secondAttribute="bottom" id="dKW-OU-q9s"/>
+                    <constraint firstItem="mLV-Az-Mwj" firstAttribute="centerY" secondItem="bYr-nC-lHU" secondAttribute="centerY" id="ftl-ry-Mg3"/>
+                    <constraint firstItem="63G-f6-3oV" firstAttribute="leading" secondItem="UGY-Qv-BJU" secondAttribute="trailing" constant="6" id="kdf-Nk-yLl"/>
+                    <constraint firstItem="UGY-Qv-BJU" firstAttribute="top" secondItem="mLV-Az-Mwj" secondAttribute="top" id="m7l-Hw-rMN"/>
+                    <constraint firstItem="bYr-nC-lHU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rfB-m0-1xK"/>
+                    <constraint firstAttribute="trailing" secondItem="bYr-nC-lHU" secondAttribute="trailing" id="vXS-aL-p9e"/>
+                    <constraint firstItem="4o1-YR-Gpk" firstAttribute="top" secondItem="UGY-Qv-BJU" secondAttribute="bottom" constant="1" id="veV-xd-ghI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="courseImageView" destination="mLV-Az-Mwj" id="1Uk-Lr-VYx"/>
+                <outlet property="courseNameLabel" destination="UGY-Qv-BJU" id="Fzn-OP-qUh"/>
+                <outlet property="courseSelectedView" destination="bYr-nC-lHU" id="d2l-1Q-nDo"/>
+                <outlet property="courseTeacherLabel" destination="4o1-YR-Gpk" id="xUF-vv-aOr"/>
+                <outlet property="infoButton" destination="63G-f6-3oV" id="wvb-QZ-dR6"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="151.57421289355324"/>
+        </tableViewCell>
+    </objects>
+</document>
